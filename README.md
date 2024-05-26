@@ -42,5 +42,24 @@ To get a local copy up and running, follow these simple steps:
 1. **Clone the repository:**
 
    ```sh
-   git clone https://github.com/yourusername/moviebuzz.git
+   git clone https://github.com/nikamnikhil/MovieBuzz.git
    cd moviebuzz
+
+2. **Install dependencies:**
+   npm install
+
+3. **Set up environment variables:**
+   **Create a .env file in the root directory with the following:**
+   VITE_API_URL=your_api_url
+   MONGODB_URI=your_mongodb_connection_string
+   JWT_SECRET=your_jwt_secret
+
+4. **Run the application:**
+   **Start the development server:**
+   npm start
+
+   **Build the application for production:**
+   npm run build
+
+   **Preview the production build:**
+   npm run preview
