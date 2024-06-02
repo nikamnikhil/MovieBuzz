@@ -1,9 +1,7 @@
-import './style.scss';
+import "./style.scss";
 
-function Header() {
-  return (
-    <div>Header</div>
-  )
-}
+const Header = () => {
+  return <div>Header</div>;
+};
 
-export default Header
+export default Header;

@@ -8,6 +8,8 @@ import Details from "../src/pages/details/Detail";
 import SearcgResult from "../src/pages/searchResult/SearchResult";
 import Explore from "../src/pages/explore/Explore";
 import PageNotFound from "../src/pages/404/PageNotFound";
+import Header from "../src/components/header/Header";
+import Footer from "../src/components/footer/Footer";
 
 function App() {
   const dispatch = useDispatch();
@@ -24,6 +26,7 @@ function App() {
   };
   return (
     <BrowserRouter>
+      <header />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/:mediaTtype/:id" element={<Details />} />
@@ -31,6 +34,7 @@ function App() {
         <Route path="/:explore/:mediaType" element={<Explore />} />
         <Route path="*" element={<PageNotFound />} />
       </Routes>
+      <Footer />
     </BrowserRouter>
   );
 }

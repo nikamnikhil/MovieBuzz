@@ -1,9 +1,7 @@
-import './state.scss';
+import "./style.scss";
 
-function Footer() {
-  return (
-    <div>Footer</div>
-  )
-}
+const Footer = () => {
+  return <div>Footer</div>;
+};
 
-export default Footer
+export default Footer;
