@@ -5,7 +5,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { getApiConfiguration } from "./store/homeSlice";
 import Home from "../src/pages/home/Home";
 import Details from "../src/pages/details/Detail";
-import SearcgResult from "../src/pages/searchResult/SearchResult";
+import SearchResult from "../src/pages/searchResult/SearchResult";
 import Explore from "../src/pages/explore/Explore";
 import PageNotFound from "../src/pages/404/PageNotFound";
 import Header from "../src/components/header/Header";
@@ -26,7 +26,7 @@ function App() {
   };
   return (
     <BrowserRouter>
-      <header />
+      <Header />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/:mediaTtype/:id" element={<Details />} />
