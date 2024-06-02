@@ -1,7 +1,7 @@
 import './style.scss';
 import HeroBanner from './heroBanner/HeroBanner'
 
-function Home() {
+const Home=()=> {
   return (
     <div className='homePage'>
       <HeroBanner/>

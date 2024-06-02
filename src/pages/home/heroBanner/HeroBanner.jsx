@@ -1,6 +1,6 @@
 import './style.scss';
 
-function HeroBanner() {
+const HeroBanner=()=> {
   return (
     <div>HeroBanner</div>
   )

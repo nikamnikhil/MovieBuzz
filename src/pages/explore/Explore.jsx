@@ -1,8 +1,6 @@
-import './style.scss';
-function Explore() {
-  return (
-    <div>Explore</div>
-  )
-}
+import "./style.scss";
+const Explore = () => {
+  return <div>Explore</div>;
+};
 
-export default Explore
+export default Explore;

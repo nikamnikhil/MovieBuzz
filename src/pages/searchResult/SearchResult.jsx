@@ -1,9 +1,7 @@
-import './style.scss'
+import "./style.scss";
 
-function SearchResult() {
-    return (
-        <div>SearchResult</div>
-    )
-}
+const SearchResult = () => {
+  return <div>SearchResult</div>;
+};
 
-export default SearchResult
+export default SearchResult;
