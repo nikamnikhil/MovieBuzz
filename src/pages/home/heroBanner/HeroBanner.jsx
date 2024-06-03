@@ -13,20 +13,20 @@ const HeroBanner = () => {
   const navigate = useNavigate();
   const { data, loading } = useFetch("movie/upcoming");
   const { url } = useSelector((state) => state?.home);
+
   useEffect(() => {
     const backImg =
-    url &&   url?.backdrop +
+      url && url?.backdrop +
       data?.results?.[Math.floor(Math.random() * 20)]?.backdrop_path;
     setBackground(backImg);
   }, [data]);
+
   const searchQueryHandler = (event) => {
     if (event.key === "Enter" && query?.length > 0) {
       navigate(`/search/${query}`);
     }
   };
-  console.log("LOADING",loading)
-  console.log("url",url)
-  console.log("background",background)
+
   return (
     <div className="heroBanner">
       {!loading && (
@@ -44,7 +44,7 @@ const HeroBanner = () => {
           <div className="searchInput">
             <input
               type="text"
-              placeholder="Search for a move or tv show..."
+              placeholder="Search for a movie or tv show..."
               onChange={(e) => {
                 setQuery(e.target.value);
               }}
