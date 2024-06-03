@@ -19,12 +19,7 @@ const Footer = () => {
           <li className="menuItem">FAQ</li>
         </ul>
         <div className="infoText">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-          do eiusmod tempor incididunt ut labore et dolore magna
-          aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-          ullamco laboris nisi ut aliquip ex ea commodo consequat.
-          Duis aute irure dolor in reprehenderit in voluptate velit
-          esse cillum dolore eu fugiat nulla pariatur.
+          Welcome to MovieBuzz! This project is a web application designed to provide users with a comprehensive movie database. Users can search, discover, and explore a wide variety of movies, from the latest releases to classic films. The application is built using modern web development technologies to ensure a smooth and responsive user experience.
         </div>
         <div className="socialIcons">
           <span className="icon">
